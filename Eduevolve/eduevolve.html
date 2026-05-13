@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduevolve</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Eduevolve">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="eduevolve.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1><span class="extra">Welcome to Eduevolve</span></h1>
+            <p style="font-size: 24px;">Empowering your learning journey</p>
+        </section>
+        
+        <section class="courses">
+            <h2 style="font-size: 40px;">Popular Courses</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="course1.jpeg" style="width:100%">
+                    <div class="text", style="font-size: 24px;">Learn C++, the powerful and versatile programming language, covering essential concepts like object-oriented programming, memory management, and data structures. 
+Gain practical skills through hands-on projects and exercises, preparing you for software development roles in various industries.
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="course2.jpg" style="width:100%">
+                    <div class="text",  style="font-size: 24px;">Master Python, the dynamic and user-friendly programming language, through comprehensive instruction on core syntax, data structures, and algorithmic problem-solving. 
+Build real-world applications and gain the skills needed for careers in web development, data analysis, and more.
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="course3.jpg" style="width:100%">
+                    <div class="text", style="font-size: 24px;">Embark on a journey into web development, mastering HTML, CSS, and JavaScript to create stunning, interactive websites. 
+Dive into modern frameworks and tools, honing your skills for a career in front-end or full-stack development.
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="course4.jpg" style="width:100%">
+                    <div class="text", style="font-size: 24px;">Discover the world of graphic design, where creativity meets technology. 
+Learn essential design principles, software tools like Adobe Photoshop and Illustrator, and unleash your artistic potential for careers in digital marketing, branding, and beyond.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="about">
+            <h2 style="font-size: 40px;">About Us</h2>
+            <p style="font-size: 20px;">Welcome to Eduevolve, your gateway to a world of knowledge and learning opportunities!
+
+At Eduevolve, we believe that education is the key to unlocking one's full potential. With this vision in mind, we are dedicated to providing high-quality, accessible, and engaging educational resources to learners of all ages and backgrounds.
+
+Our team consists of passionate educators, developers, and designers who are committed to creating an enriching learning experience for our users. We strive to empower learners to explore new subjects, develop essential skills, and achieve their academic and personal goals.
+
+Whether you're a student looking to enhance your academic performance, a professional seeking to upskill for career advancement, or simply a curious individual eager to expand your knowledge horizons, Eduevolve is here to support you every step of the way.
+
+From interactive courses and tutorials to insightful articles and resources, we offer a diverse range of learning materials curated to cater to various interests and learning styles. Our platform is designed to be intuitive and user-friendly, ensuring that learning is not only educational but also enjoyable.
+
+Join us on this exciting journey of discovery and lifelong learning. Together, let's embark on a path of growth, exploration, and transformation.
+
+</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eduevolve. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
